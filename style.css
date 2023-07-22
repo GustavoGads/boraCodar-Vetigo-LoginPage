@@ -9,6 +9,8 @@ body {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    background-color: #F8FAFC;
 }
 
 main {
@@ -20,7 +22,7 @@ main {
 }
 
 main .sidebar {
-    width: 384px;
+    max-width: 384px;
 }
 
 .header {
@@ -114,6 +116,22 @@ aside {
     height: 100vh;
 
     background-image: url(./assets/Background-img.png);
+    filter: hue-rotate(22deg) grayscale(20%) brightness(93%) ;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 958px) {
+    body {
+        display: grid;
+        grid-template-columns: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside {
+        width: 0;
+        height: 0;
+        background-image: none;
+    }
 }
