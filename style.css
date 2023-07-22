@@ -135,3 +135,13 @@ aside {
         background-image: none;
     }
 }
+
+@media (max-width: 500px) {
+    main {
+        padding: 20px 30px;
+    }
+
+    main .sidebar{
+        width: 100%;
+    }
+}
