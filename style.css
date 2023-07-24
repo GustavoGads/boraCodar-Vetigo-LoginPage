@@ -1,4 +1,4 @@
-* {
+    transition: all 0.3s ease-in-out; {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -100,7 +100,7 @@ button {
 
     margin: 32px 0;
     cursor: pointer;
-    transition: linear 500ms;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
